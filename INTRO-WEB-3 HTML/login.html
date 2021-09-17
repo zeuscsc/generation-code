@@ -4,25 +4,55 @@
         <title>Login</title>
     </header>
     <body>
-        <form method="GET" action="/">
-            <label>User Name:</label><input name="user" type="text"><br>
-            <label>Password:</label><input name="pwd" type="password"><br>
-            <label>Email:</label><input name="e" type="email"><br>
-            <!--<label>Image:</label><input type="file"><br>-->
-            <label>Date:</label><input name="d" type="date"><br>
-            <label>Telephone:</label><input name="t" type="tel"><br>
-            <label>URL:</label><input type="url" name="u" value="https://zeuschiu.com"><br>
-            <input type="radio" id="html" name="fav_food" value="ice-cream">
-            <label >Ice-cram</label><br>
-            <input type="radio" id="css" name="fav_food" value="chocolate">
-            <label >Chocolate</label><br>
-            <input type="radio" id="javascript" name="fav_food" value="java">
-            <label>Java</label>
-            <input type="radio"  name="sex" value="m">
-            <label >Male</label><br>
-            <input type="radio" name="sex" value="f">
-            <label>Female</label>
-            <input type="submit" value="Login">
-        </form>
+        <div>
+            <form method="GET" action="/">
+                <label>User Name:</label><input name="user" type="text" value="Zeus"><br>
+                <label>Password:</label><input name="pwd" type="password"><br>
+                <label>Email:</label><input name="e" type="email"><br>
+                <label>Image:</label><input type="file" name="i"><br>
+                <label>Date:</label><input name="d" type="date"><br>
+                <label>Telephone:</label><input name="t" type="tel"><br>
+                <label>URL:</label><input type="url" name="u" value="https://zeuschiu.com"><br>
+                <table>
+                    <tr>
+                        <th>User Name</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                    </tr>
+                    <tr>
+                        <td>Zeus</td>
+                        <td>zeuscsc@gmail.com</td>
+                        <td>12345678</td>
+                    </tr>
+                    <tr>
+                        <td>Juno</td>
+                        <td>juno@gmail.com</td>
+                        <td>12345678</td>
+                    </tr>
+                </table>
+                <fieldset>
+                    <legend>Favourite Dessert</legend>
+                    <input type="radio" id="html" name="fav_food" value="ice-cream">
+                    <label >Ice-cram</label>
+                    <input type="radio" id="css" name="fav_food" value="chocolate">
+                    <label >Chocolate</label>
+                    <input type="radio" id="javascript" name="fav_food" value="java" checked="true">
+                    <label>Java</label><br>
+                </fieldset>
+                <fieldset>
+                    <legend>Sex</legend>
+                    <input type="radio"  name="sex" value="m">
+                    <label >Male</label>
+                    <input type="radio" name="sex" value="f">
+                    <label>Female</label><br>
+                </fieldset>
+                <fieldset>
+                    <legend>Owned Console</legend>
+                    <input type="checkbox" name="xbox" value="t"><label>X-box</label>
+                    <input type="checkbox" name="pc" value="t" checked="true"><label>PC</label><br>
+                </fieldset>
+                <input type="submit" value="Login">
+            </form>
+        </div>
     </body>
 </html>
