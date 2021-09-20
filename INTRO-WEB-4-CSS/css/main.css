@@ -1,0 +1,39 @@
+body{
+    background-color: black;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.container{
+    width: 720px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.center_row{
+    justify-content: center;
+    display: flex;
+}
+.col{
+    display: flex;
+}
+.row{
+    display: block;
+}
+h1{
+    color:rgb(112, 112, 112);
+    font-size: 75px;
+}
+.foobar{
+    color:goldenrod;
+    font-size: 10vw;
+}
+#foobar{
+    color:skyblue;
+}
+div h1{
+    color:honeydew;
+}
+.foobar h1{
+    color:rosybrown;
+}
