@@ -1,39 +1,40 @@
 body{
-    background-color: black;
-    align-items: center;
+    background-image: url(http://www.distancetomars.com/images/stars.jpg);
     justify-content: center;
     display: flex;
+}
+a{
+	scroll-behavior: smooth;
+    transition: all 10s;
+}
+.header{
+    height: 10vh;
 }
 .container{
-    width: 720px;
-    align-items: center;
+    width:50vw;
+}
+#earth{
     justify-content: center;
     display: flex;
 }
-.center_row{
-    justify-content: center;
-    display: flex;
+#earth div{
+    position: relative;
 }
-.col{
-    display: flex;
+#earth div .planet{
+    position: absolute;
+    top: 20vw;
+    width: 3vw;
+    height: 3vw;
+    transform: translate(-50%,-50%);
 }
-.row{
-    display: block;
+#earth div .ring{
+    position: absolute;
+    top: 20vw;
+    width: 15vw;
+    height: 15vw;
+    transform: translate(-50%,-50%);
 }
-h1{
-    color:rgb(112, 112, 112);
-    font-size: 75px;
-}
-.foobar{
-    color:goldenrod;
-    font-size: 10vw;
-}
-#foobar{
-    color:skyblue;
-}
-div h1{
-    color:honeydew;
-}
-.foobar h1{
-    color:rosybrown;
+
+#moon{
+    height: 422000vw;
 }
