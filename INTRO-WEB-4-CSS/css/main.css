@@ -1,11 +1,10 @@
+html{
+	scroll-behavior: smooth;
+}
 body{
     background-image: url(http://www.distancetomars.com/images/stars.jpg);
     justify-content: center;
     display: flex;
-}
-a{
-	scroll-behavior: smooth;
-    transition: all 10s;
 }
 .header{
     height: 10vh;
