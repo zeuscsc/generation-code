@@ -23,6 +23,9 @@ let output = document.querySelector("#output");
 let binaryOutput = document.querySelector("#binaryOutput");
 let result = ""
 let stack = 0
+// a.addEventListener("input", (e) => {
+//     a.value += a.value
+// })
 b0.addEventListener("click", (e) => {
     result = result + "0";
     output.textContent = parseInt(result, 2);
@@ -43,6 +46,7 @@ equal.addEventListener("click", (e) => {
 sum.addEventListener("click", (e) => {
     stack = stack + result
     result = ""
+    // simple version
     output.textContent = parseInt(a.value) + parseInt(b.value)
 })
 document.addEventListener("mousedown", (e) => {
