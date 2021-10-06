@@ -1,0 +1,17 @@
+.day{
+    background-color: skyblue;
+}
+.night{
+    background-color: black;
+}
+.sky{
+    background-color:white;
+}
+.awsome{
+    height: 10vh;
+    width: 20vw;
+}
+.focus{
+    background-color: black;
+    color: yellow;
+}
