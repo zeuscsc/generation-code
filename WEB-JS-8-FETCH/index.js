@@ -132,6 +132,8 @@ async function waitAndDraw() {
     console.log(await drawUserData())
     console.log(await waitForProductData())
     console.log(await drawProductData())
+    waitAndDraw()
+    // waitAndDraw()
 }
 console.log("Draw Layout Promise")
 console.log("Listen to Interaction Promse")
