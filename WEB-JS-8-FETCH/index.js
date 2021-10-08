@@ -47,6 +47,12 @@ function updateMemo() {
         })
     }
 }
+function sqrt(v) {
+    if (v < 0)
+        throw "Sqrt should have a positive number";
+    return v ** (0.5)
+}
+// console.log(sqrt(-4))
 // fetchDemo();
 updateMemo();
 async function fetchDemo() {
@@ -92,7 +98,6 @@ function waitForUserData() {
         setTimeout((e) => {
             if (false) {
                 reject("Failed to get response from server")
-                // throw "Failed to get response from server throw"
             }
             console.log("Wait for User data Promise")
             resolve({ userid: 1 })
@@ -135,7 +140,7 @@ async function waitAndDraw() {
     waitAndDraw()
     // waitAndDraw()
 }
-console.log("Draw Layout Promise")
-console.log("Listen to Interaction Promse")
-waitAndDraw()
+// console.log("Draw Layout Promise")
+// console.log("Listen to Interaction Promse")
+// waitAndDraw()
 // waitAndDraw()
