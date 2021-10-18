@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6aee803d-2946-4c64-984f-4ea8191b92df" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../JAVA-2-TYPES/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../JAVA-2-TYPES/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JAVA-2-TYPES/src/com/zeuschiu/types/Circle.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JAVA-2-TYPES/src/com/zeuschiu/types/Circle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JAVA-2-TYPES/src/com/zeuschiu/types/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JAVA-2-TYPES/src/com/zeuschiu/types/Main.java" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/zeuschiu/collections/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="632">
+              <caret line="39" column="35" lean-forward="true" selection-start-line="39" selection-start-column="35" selection-end-line="39" selection-end-column="35" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#154#162#0" expanded="true" />
+                <element signature="e#233#242#0" expanded="true" />
+                <element signature="e#455#472#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>get</find>
+      <find>get</find>
+      <find>add</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/com/zeuschiu/collections/Main.java" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1932" />
+    <option name="height" value="1056" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="ProjectPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1634529316081" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.zeuschiu.collections.Main" />
+      <module name="JAVA-4-Collections" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6aee803d-2946-4c64-984f-4ea8191b92df" name="Default Changelist" comment="" />
+      <created>1634521756429</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1634521756429</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-6" y="-6" width="1933" height="1053" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Image Layers" />
+      <window_info id="Designer" />
+      <window_info id="UI Designer" />
+      <window_info id="Capture Tool" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1392" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32936078" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3997833" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Maven" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/zeuschiu/collections/Main.java</url>
+          <line>20</line>
+          <properties />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="jar://C:/Program Files/Java/jdk-17/lib/src.zip!/java.base/java/lang/reflect/Array.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="484" column="33" selection-start-line="484" selection-start-column="33" selection-end-line="484" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-17/lib/src.zip!/java.base/java/util/Arrays.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="3516" column="5" lean-forward="true" selection-start-line="3516" selection-start-column="5" selection-end-line="3516" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-17/lib/src.zip!/java.base/java/lang/System.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="645" column="30" selection-start-line="645" selection-start-column="30" selection-end-line="645" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-17/lib/src.zip!/java.base/java/util/ArrayList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="365">
+          <caret line="489" column="37" lean-forward="true" selection-start-line="489" selection-start-column="37" selection-end-line="489" selection-end-column="37" />
+          <folding>
+            <element signature="e#6398#6399#0" expanded="true" />
+            <element signature="e#6466#6467#0" expanded="true" />
+            <element signature="e#9126#9127#0" expanded="true" />
+            <element signature="e#9163#9164#0" expanded="true" />
+            <element signature="e#14824#14825#0" expanded="true" />
+            <element signature="e#14869#14870#0" expanded="true" />
+            <element signature="e#15935#16326#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-17/lib/src.zip!/java.base/java/util/HashMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-561">
+          <caret line="2044" column="19" selection-start-line="2044" selection-start-column="19" selection-end-line="2044" selection-end-column="19" />
+          <folding>
+            <element signature="e#24343#24344#0" expanded="true" />
+            <element signature="e#24408#24409#0" expanded="true" />
+            <element signature="e#71146#71147#0" expanded="true" />
+            <element signature="e#71203#71204#0" expanded="true" />
+            <element signature="e#73213#73214#0" expanded="true" />
+            <element signature="e#73264#73265#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/zeuschiu/collections/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="632">
+          <caret line="39" column="35" lean-forward="true" selection-start-line="39" selection-start-column="35" selection-end-line="39" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#154#162#0" expanded="true" />
+            <element signature="e#233#242#0" expanded="true" />
+            <element signature="e#455#472#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
