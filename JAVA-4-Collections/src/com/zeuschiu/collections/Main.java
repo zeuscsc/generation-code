@@ -5,6 +5,7 @@ import java.util.HashMap;
 
 class Person{
     public String name;
+    public Integer age;
 }
 public class Main {
     public static ArrayList<Person> arrayList=new ArrayList<Person>();
@@ -38,5 +39,17 @@ public class Main {
         Integer i1= hashMap.get(a);
         Integer i2= hashMap.get(b);
         hashMap.keySet().toArray();
+        hashMap.values().toArray();
+        for (Person p :hashMap.keySet()) {
+            p.name="Zeus";
+        }
+//        for(Integer i:hashMap.values()){
+//            i++;
+//            hashMap.put(new Person(),i);
+//        }
+        HashMap<Person,Integer> hm=hashMap;
+        hm=(HashMap<Person, Integer>) hashMap.clone();
+        hm.clear();
+        HashMapDemo.Demo();
     }
 }
