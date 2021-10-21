@@ -1,7 +1,6 @@
 package com.zeuschiu.collections.oop.ex3;
 
-import java.util.Collections;
-import java.util.HashSet;
+import java.util.*;
 
 public class SchoolSystem {
     public static class Student{
@@ -11,7 +10,7 @@ public class SchoolSystem {
         int grade;
         int year;
         public void printFullName(){
-            System.out.println(firstName+" "+lastName);
+            System.out.println(firstName+" "+lastName+" ");
         }
 
         public boolean isApproved(){
@@ -31,10 +30,52 @@ public class SchoolSystem {
         }
         @Override
         public String toString(){
-            return firstName+" "+lastName;
+            return firstName+" "+lastName+" "+grade;
         }
     }
     public static class Students extends HashSet<Student> {
+        public static class SortByGrade implements Comparator<Student> {
+
+            @Override
+            public int compare(Student o1, Student o2) {
+                return o2.grade-o1.grade;
+            }
+
+            @Override
+            public boolean equals(Object obj) {
+                return false;
+            }
+            public static class QuickSort{
+                public static void sort(ArrayList<Student> students){
+                    sort(students,0,students.size()-1);
+                }
+                public static void sort(ArrayList<Student> students,int low, int high){
+                    if(low<high){
+                        int pivot= partition(students,low,high);
+                        sort(students,low,pivot-1);
+                        sort(students,pivot+1,high);
+                    }
+                }
+                public static int partition(ArrayList<Student> students, int low, int high){
+                    int pivot=students.get(high).grade;
+                    int i=low-1;
+                    for(int j=low;j<=high;j++){
+                        if(students.get(j).grade>pivot){
+                            i++;
+                            swap(students,i,j);
+                        }
+                    }
+                    swap(students,i+1,high);
+                    return i+1;
+                }
+                public static void swap(ArrayList<Student> students, int i,int j){
+                    Student temp=students.get(i);
+                    students.set(i,students.get(j));
+                    students.set(j,temp);
+                }
+
+            }
+        }
         @Override
         public String toString(){
             String output="";
@@ -42,6 +83,13 @@ public class SchoolSystem {
                 output=output.concat(s.toString()+"|");
             }
             return output;
+        }
+        public ArrayList<Student> toArrayList(){
+            ArrayList<Student> students=new ArrayList<Student>();
+            for(Student s:this){
+                students.add(s);
+            }
+            return students;
         }
     }
     public static class Course{
@@ -73,6 +121,20 @@ public class SchoolSystem {
             }
             return max;
         }
+
+        public double averageGrade(){
+            int total=0;
+            for (Student s:students){
+                total+=s.grade;
+            }
+            return (double)total/(double) students.size();
+        }
+        public ArrayList<Student> getRank(){
+            ArrayList<Student> students=this.students.toArrayList();//O(n)
+//            Collections.sort(students,new Students.SortByGrade());//Trim Sort O(n*log(n))
+            Students.SortByGrade.QuickSort.sort(students);//Quick Sort O(n*log(n))
+            return students;
+        }
     }
 
     public static void main(String[] args) {
@@ -94,5 +156,7 @@ public class SchoolSystem {
         Student[] students={terence,ken,kumud};
         course.enroll(students);
         System.out.println(course.students);
+        System.out.println(course.averageGrade());
+        System.out.println(course.getRank());
     }
 }
