@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.zeuschiu.generation</groupId>
-	<artifactId>server</artifactId>
+	<artifactId>java-server</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>server</name>
+	<name>JavaServer</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>1.8</java.version>
@@ -50,12 +50,7 @@
 			<artifactId>httpclient</artifactId>
 			<scope>test</scope>
 		</dependency>
-		<dependency>
-			<groupId>org.hibernate</groupId>
-			<artifactId>hibernate-core</artifactId>
-			<version>5.4.32.Final</version>
-		</dependency>
-		<!--	jwt-->
+		<!--jwt-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-security</artifactId>

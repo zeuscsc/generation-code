@@ -2,5 +2,5 @@ package com.zeuschiu.generation.javaserver.modules;
 
 import org.springframework.data.repository.CrudRepository;
 
-public interface MemoRepository extends CrudRepository<Memo, Long> {
+public interface UserRepository extends CrudRepository<Memo, Long> {
 }

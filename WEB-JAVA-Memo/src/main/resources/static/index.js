@@ -1,12 +1,21 @@
 let form = document.querySelector("#add-form");
 let memos = [{ message: "hello world" }]
-form.addEventListener("submit", (e) => {
+form.addEventListener("submit", async (e) => {
     e.preventDefault();
     let memo_content = document.querySelector("#memo_content");
     memos.push({ message: memo_content.value })
-    localStorage.setItem("memos", JSON.stringify(memos))
+    await addMemo(memo_content.value);
     updateMemo();
 })
+async function addMemo(message) {
+    let res = await fetch("http://localhost:8081/memos/add", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify({ "content": message })
+    });
+}
 async function getMemos() {
     let res = await fetch("http://localhost:8081/memos/all");
     let memos = await res.json();

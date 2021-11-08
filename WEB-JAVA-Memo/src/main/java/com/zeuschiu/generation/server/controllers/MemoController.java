@@ -2,6 +2,7 @@ package com.zeuschiu.generation.server.controllers;
 
 import com.zeuschiu.generation.server.models.Memo;
 import com.zeuschiu.generation.server.models.MemoRepository;
+import com.zeuschiu.generation.server.services.MemoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -10,15 +11,19 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("/memos")
+@CrossOrigin("*")
 public class MemoController {
-    @Autowired
-    private MemoRepository memoRepository;
+    private final MemoService memoService;
+
+    public MemoController(@Autowired MemoService memoService){
+        this.memoService=memoService;
+    }
+
     @PostMapping("/add")
     public @ResponseBody
     Map<String,String> addMemo(@RequestBody Map<String,String > json){
         String content=json.get("content");
-        Memo memo=new Memo(content);
-        memoRepository.save(memo);
+        memoService.addMemo(content);
         HashMap<String,String> response=new HashMap<>();
         response.put("success","true");
         return response;
@@ -26,6 +31,6 @@ public class MemoController {
 
     @GetMapping("/all")
     public @ResponseBody Iterable<Memo> getAllMemos(){
-        return memoRepository.findAll();
+        return memoService.getMemos();
     }
 }
