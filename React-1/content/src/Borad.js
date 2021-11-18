@@ -6,8 +6,8 @@ export default function Board() {
     const [squares, setSquares] = useState(Array(9).fill(""));
     const [isOTurn, setIsOTurn] = useState(true);
     function renderSquare(id) {
-        function onSquareClick() {
-            handleSqureClick(id)
+        let onSquareClick = () => {
+            handleSqureClick(id);
         }
         return (<Square value={squares[id]} onSquareClick={onSquareClick}></Square>)
     }
