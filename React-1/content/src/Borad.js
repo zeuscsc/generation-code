@@ -13,6 +13,10 @@ export default function Board() {
     }
     function handleSqureClick(id) {
         const newSquares = [...squares]
+        // const newSquares=Array(9).fill("")
+        // for(let i=0;i<squares.length;i++){
+        //     newSquares[i]=squares[i];
+        // }
         if (newSquares[id] === "") {
             if (isOTurn) {
                 newSquares[id] = "O"
