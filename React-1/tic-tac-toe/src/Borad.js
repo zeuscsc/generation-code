@@ -2,6 +2,7 @@ import Square from "./Square";
 import "./Board.css"
 import { useState } from "react";
 import UserNameInput from "./UserNameInput";
+import TicTacForm from "./TicTacForm";
 
 export default function Board() {
     const [squares, setSquares] = useState(Array(9).fill(""));
@@ -62,15 +63,16 @@ export default function Board() {
     //         status="X Turn"
     //     }
     // }
-    function onInputUserName(e){
-        console.log(e.target.value);
-        setUsername(e.target.value);
+    function onInputUserName(username){
+        console.log(username);
+        setUsername(username);
     }
     return (
         <div>
             <div className="tic-tac-toe">
                 <div>
-                    <UserNameInput onInput={onInputUserName}></UserNameInput>
+                    {/* <UserNameInput onUserNameInput={onInputUserName}></UserNameInput> */}
+                    {/* <UserNameInput onInput={onInputUserName}></UserNameInput> */}
                     <div>Tic Tac Toe</div>
                     <div className="status">{status}</div>
                     <div className="board-row">
@@ -88,6 +90,7 @@ export default function Board() {
                         {renderSquare(7)}
                         {renderSquare(8)}
                     </div>
+                    <TicTacForm></TicTacForm>
                 </div>
             </div>
         </div>
