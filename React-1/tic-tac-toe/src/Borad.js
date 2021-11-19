@@ -1,10 +1,12 @@
 import Square from "./Square";
 import "./Board.css"
 import { useState } from "react";
+import UserNameInput from "./UserNameInput";
 
 export default function Board() {
     const [squares, setSquares] = useState(Array(9).fill(""));
     const [isOTurn, setIsOTurn] = useState(true);
+    const [username,setUsername]=useState("");
     function renderSquare(id) {
         let onSquareClick = () => {
             handleSqureClick(id);
@@ -60,10 +62,15 @@ export default function Board() {
     //         status="X Turn"
     //     }
     // }
+    function onInputUserName(e){
+        console.log(e.target.value);
+        setUsername(e.target.value);
+    }
     return (
         <div>
             <div className="tic-tac-toe">
                 <div>
+                    <UserNameInput onInput={onInputUserName}></UserNameInput>
                     <div>Tic Tac Toe</div>
                     <div className="status">{status}</div>
                     <div className="board-row">
